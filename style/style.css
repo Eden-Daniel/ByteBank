@@ -1,0 +1,29 @@
+@import url("./sidebar.css");
+@import url("./cabecalho.css");
+@import url("./grafico.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --font-Montserat: 'Montserrat', sans-serif;
+    --azul: #3278fa;;
+    --azul-claro: #19A7CE;
+    --azul-clarinho: #AFD3E2;
+    --verde-escuro: #00DEA3;
+    --creme: #F6F1F1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 29px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    font-family: var(--font-Montserat);
+    grid-template-columns: 20% auto;
+    background-color: var(--azul-clarinho);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">    
+    <title>ByteBank</title>
+</head>
+<body class="container">
+    <aside class="sidebar">
+        <img src="image/logo.png" alt="Logo do bytebank">
+        <img src="https://avatars.githubusercontent.com/u/91293090?v=4" alt="Avatar do usuário" class="sidebar_avatar">
+        <h2>Éden Silva</h2>
+        <hr>
+        <nav class="sidbar_links">
+            <a href="#"><span class="links_icone deshboard"></span> Dashboard</a>
+            <a href="#"><span class="links_icone coffer"></span> Investimentos</a>
+            <a href="#"><span class="links_icone configuration"></span> Minha Conta</a>
+            <a href="#"><span class="links_icone doubt"></span> Dúvidas Frequentes</a>
+        </nav>
+    </aside>
+
+    <main>
+        <header class="cabecalho">
+            <h2>Olá, Éden! Estes são os detalhes da sua cotação:</h2>
+        </header>
+
+        <article class="dadosDolar">
+            <div class="grafico">
+                <div class="grafico_titulo">
+                    <span class="grafico_ilustracao-dolar"></span>
+                    <h2>Variação da moeda desde o login</h2>                    
+                </div>
+                <canvas id="graficoDolar"></canvas>
+            </div>
+
+            <div class="investimento">
+                <h2>Valores da moeda</h2>
+                <ul class="investimento_lista" id="dolar" data-lista>
+
+                </ul>
+            </div>
+        </article>
+
+        <article class="dadosIene">
+            <div class="grafico">
+                <div class="grafico_titulo">
+                    <span class="grafico_ilustracao-iene"></span>
+                    <h2>Variação da moeda desde o login</h2>                    
+                </div>
+                <canvas id="graficoIene"></canvas>
+            </div>
+
+            <div class="investimento">
+                <h2>Valores da moeda</h2>
+                <ul class="investimento_lista" id="iene" data-lista>
+
+                </ul>
+            </div>
+        </article>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
